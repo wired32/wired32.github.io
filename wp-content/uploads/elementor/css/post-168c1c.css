@@ -1,6 +1,11 @@
 .elementor-16 .elementor-element.elementor-element-28727de > .elementor-container{
     min-height:590px;
 }
+
+body {
+    overflow-x: none;
+}
+
 .elementor-16 .elementor-element.elementor-element-28727de:not(.elementor-motion-effects-element-type-background), .elementor-16 .elementor-element.elementor-element-28727de > .elementor-motion-effects-container > .elementor-motion-effects-layer{
     background-image:url("../../2024/08/Mask-group-29-1.png");
     background-size: 100% auto;
@@ -403,6 +408,16 @@
     .elementor-16 .elementor-element.elementor-element-28727de:not(.elementor-motion-effects-element-type-background), .elementor-16 .elementor-element.elementor-element-28727de > .elementor-motion-effects-container > .elementor-motion-effects-layer{
         background-image:url("../../2024/08/Mask-group-30.png");
     }
+
+    .title-wrapper {
+        display: none;
+    }
+
+    .aboutus-wrapper {
+        position: relative;
+        left: 32%;
+    }
+
     .elementor-16 .elementor-element.elementor-element-6922f60{
         width:100%;
     }

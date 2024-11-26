@@ -1,9 +1,83 @@
+* {
+    margin: 0;
+}
+
 .elementor-16 .elementor-element.elementor-element-28727de > .elementor-container{
     min-height:590px;
 }
 
 body {
     overflow-x: none;
+}
+
+.after {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3vh;
+    height: 200vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.info-boxes {
+    width: 60%;
+    height: 350px;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.box {
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    min-width: 100px;
+    padding: 1%;
+    border-radius: 20px;
+    height: auto;
+    min-height: 25vh;
+    background-color: #ffffff;
+    outline: red solid 2px;
+    outline-color: red;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.box-title {
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-description {
+    text-align: center;
+    width: 100%;
+}
+
+.box:hover {
+    transform: scale(1);
+    .box-title {
+        color: #f1f1f1;
+    }
+    background-color: rgb(255, 28, 28);
+    color: #f1f1f1;
+}
+
+[type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
+    color: #000; /* cor padrão */
+    background-color: transparent; /* fundo transparente */
+    text-decoration: none;
+}
+
+.aboutwrapper {
+    max-width: 900px;
+    width: 95%;
 }
 
 .elementor-16 .elementor-element.elementor-element-28727de:not(.elementor-motion-effects-element-type-background), .elementor-16 .elementor-element.elementor-element-28727de > .elementor-motion-effects-container > .elementor-motion-effects-layer{
@@ -413,9 +487,32 @@ body {
         display: none;
     }
 
+    .box:hover {
+        transform: scale(0.95);
+    }
+
+    .box:focus {
+        outline: none;
+    }
+
+    .box-description {
+        width: 95%;
+    }
+
     .aboutus-wrapper {
         position: relative;
         left: 32%;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .box {
+        max-width: none;
     }
 
     .elementor-16 .elementor-element.elementor-element-6922f60{

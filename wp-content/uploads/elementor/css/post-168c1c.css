@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    z-index: 1;
 }
 
 .elementor-16 .elementor-element.elementor-element-28727de > .elementor-container{
@@ -12,15 +13,47 @@ body {
 
 .after {
     display: flex;
+    position: relative;
     align-items: center;
-    flex-direction: column;
-    padding-top: 3vh;
-    height: 200vh;
+    flex-direction: row;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     width: 100%;
-    box-sizing: border-box;
     margin: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
+.section-wrap1 {
+    text-align: left;
+}
+
+.products-redirect {
+    height: 80vh;
+}
+
+.gear {
+    position: fixed;
+    top: 0px;
+    z-index: 0;
+    opacity: 0;
+}
+
+#gear {
+    transition: opacity 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+.after.visible {
+    opacity: 1;
+}
 
 .info-boxes {
     width: 60%;
@@ -29,6 +62,41 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    
+}
+
+.products-redirect {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.overframe {
+    display: flex;
+    z-index: 1;
+    padding: 20vh;
+    max-width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.opproduct {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    width: 140px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.opproduct:hover {
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(255, 45, 45, 0.8), 0 0 20px rgba(255, 20, 20, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
 }
 
 .box {
@@ -37,8 +105,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 250px;
-    min-width: 100px;
+    min-width: 10vw;
     padding: 1%;
     border-radius: 20px;
     height: auto;
@@ -69,15 +136,11 @@ body {
     color: #f1f1f1;
 }
 
-[type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
-    color: #000; /* cor padrão */
-    background-color: transparent; /* fundo transparente */
-    text-decoration: none;
-}
-
 .aboutwrapper {
     max-width: 900px;
     width: 95%;
+    transition: opacity 0.5s ease-in;
+    background-color: #ffffff;
 }
 
 .elementor-16 .elementor-element.elementor-element-28727de:not(.elementor-motion-effects-element-type-background), .elementor-16 .elementor-element.elementor-element-28727de > .elementor-motion-effects-container > .elementor-motion-effects-layer{
@@ -504,6 +567,16 @@ body {
         left: 32%;
     }
 
+    .overframe {
+        padding: 0;
+        max-width: 320px;
+    }
+
+    .products-redirect {
+        justify-content: center;
+        align-items: center;
+    }
+
     .info-boxes {
         flex-direction: column;
         justify-content: center;
@@ -513,6 +586,14 @@ body {
 
     .box {
         max-width: none;
+    }
+
+    .after {
+        flex-direction: column;
+    }
+
+    .section-wrap1 {
+        text-align: center;
     }
 
     .elementor-16 .elementor-element.elementor-element-6922f60{

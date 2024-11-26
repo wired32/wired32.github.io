@@ -189,13 +189,16 @@
                 </div>
             </section>
 
-            <div class="after" id="about">
-                <h1 style="text-align: center; ">Você está na <span style="color: #ff0000;">DMT Equipament!</span></h1>
-                <div class="aboutwrapper">
-                    <p style="text-align: center;">
-                        Sabia que oferecer <strong>soluções completas</strong> para o seu negócio é o nosso maior compromisso?
+            <section class="after" id="about">
+                <div class="section-wrap1">
+                    <h1>Você está na <span style="color: #ff0000;">DMT Equipament!</span></h1>
+                    <div class="aboutwrapper">
+                        <p>
+                            Sabia que oferecer <strong>soluções completas</strong> para o seu negócio é o nosso maior compromisso?
 
-                        Desde o primeiro contato até a entrega final, cuidamos de <strong>cada detalhe</strong> para garantir que sua experiência com a DMT Equipament seja <strong>impecável</strong>. Para nós, cada cliente é uma oportunidade de fazer a diferença.</p>
+                            Desde o primeiro contato até a entrega final, cuidamos de <strong>cada detalhe</strong> para garantir que sua experiência com a DMT Equipament seja <strong>impecável</strong>. Para nós, cada cliente é uma oportunidade de fazer a diferença.
+                        </p>
+                    </div>
                 </div>
                 <div class="info-boxes">
                     <div class="box">
@@ -209,10 +212,22 @@
                     <div class="box">
                         <h3 class="box-title">Confiança</h3>
                         <p class="box-description">Construímos relações sólidas e duradouras com nossos clientes e parceiros, baseadas em transparência, respeito e no compromisso de sempre cumprir nossas promessas.</p>
-                    </div>
+                    </div>  
                 </div>
+            </section>
                 
                 
+            </div>
+            <div class="products-redirect">
+                <div class="overframe">
+                    <h2 style="color: #ebfbff;">Explore nosso universo de produtos cuidadosamente selecionados para oferecer máxima performance e durabilidade.</h2>
+                    <a href="produtos/index.html" class="opproduct">Ver Produtos</a>
+                </div>
+                <picture class="gear" id="gear">
+                    <source media="(max-width: 600px)" srcset="wp-content/uploads/2024/08/gear-mobile.png">
+                    <source media="(min-width: 601px)" srcset="wp-content/uploads/2024/08/gear-close-up.jpg">
+                    <img src="wp-content/uploads/2024/08/gear-close-up.jpg" alt="">
+                </picture>                  
             </div>
             
         </div>
@@ -325,6 +340,27 @@
             	document.addEventListener( event, lazyloadRunObserver );
             } );
         </script>
+
+        <script>
+            window.addEventListener('load', () => {
+                document.querySelector('.after').classList.add('visible');
+                document.querySelector('.gear').classList.add('visible');
+            });
+        </script>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                const target = document.getElementById('gear');
+                const scrollPoint = 10; // ponto de rolagem
+
+                if (window.scrollY > scrollPoint) {
+                    // torna o item invisível
+                    target.classList.add('show');
+                }
+            });
+
+        </script>
+
         <link rel='stylesheet' id='widget-social-icons-css' href='wp-content/plugins/elementor/assets/css/widget-social-icons.min401f.css?ver=3.25.4' media='all' />
         <link rel='stylesheet' id='e-apple-webkit-css' href='wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min401f.css?ver=3.25.4' media='all' />
         <script src="wp-content/plugins/coblocks/dist/js/coblocks-animationa9d5.js?ver=3.1.13" id="coblocks-animation-js"></script>

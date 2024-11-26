@@ -41,6 +41,7 @@ body {
     top: 0px;
     z-index: 0;
     opacity: 0;
+    filter: grayscale(0.6);
 }
 
 #gear {
@@ -129,10 +130,12 @@ body {
 
 .box:hover {
     transform: scale(1);
-    .box-title {
-        color: #f1f1f1;
-    }
+    box-shadow: 0 0 5px rgba(255, 127, 127, 0.8), 0 0 20px rgba(255, 68, 68, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
     background-color: rgb(255, 28, 28);
+    color: #f1f1f1;
+}
+
+.box:hover .box-title {
     color: #f1f1f1;
 }
 

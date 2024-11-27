@@ -1,0 +1,11 @@
+img {
+    border-radius: 20px !important; 
+    outline-color: red;
+    outline-style: solid;
+    outline-width: 1.75px;
+}
+
+.logo-image {
+    outline: none;
+    border-radius: 0;
+}

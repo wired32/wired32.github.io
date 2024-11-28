@@ -121,11 +121,11 @@
                                         <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
                                             <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open elementor-animation-grow eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close elementor-animation-grow eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
                                         </div>
-                                        <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
-                                            <ul id="menu-2-2611de0" class="elementor-nav-menu">
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item menu-item-70"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="#about" class="elementor-item" tabindex="-1">Sobre nós</a></li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="produtos/index.html" class="elementor-item" tabindex="-1">Produtos</a></li>
+                                        <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container mobile-menu" role="navigation" aria-hidden="true">
+                                            <ul id="menu-2-2611de0" class="elementor-nav-menu mobile-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item menu-item-70 mobile-item"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99 mobile-item"><a href="#about" class="elementor-item mobile-item" tabindex="-1">Sobre nós</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115 mobile-item"><a href="produtos/index.html" class="elementor-item mobile-item" tabindex="-1">Produtos</a></li>
                                                 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="marcas/index.html" class="elementor-item" tabindex="-1">Marcas</a></li>
                                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="atendimento-ao-cliente/index.html" class="elementor-item" tabindex="-1">Atendimento ao cliente</a></li> -->
                                             </ul>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <div data-elementor-type="wp-post" data-elementor-id="16" class="elementor elementor-16">
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-28727de elementor-section-height-min-height animated-slow elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-invisible" data-id="28727de" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-28727de elementor-section-height-min-height animated-slow elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-invisible engenheira" data-id="28727de" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
                 <div class="elementor-container elementor-column-gap-default">
                     <div class="title-wrapper" style="margin-left: 15%;">
                         <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6922f60" data-id="6922f60" data-element_type="column">
@@ -222,12 +222,7 @@
                 <div class="overframe">
                     <h2 style="color: #ebfbff;">Explore nosso universo de produtos cuidadosamente selecionados para oferecer máxima performance e durabilidade.</h2>
                     <a href="produtos/index.html" class="opproduct">Ver Produtos</a>
-                </div>
-                <picture class="gear" id="gear">
-                    <source media="(max-width: 600px)" srcset="wp-content/uploads/2024/08/gear-mobile.png">
-                    <source media="(min-width: 601px)" srcset="wp-content/uploads/2024/08/gear-close-up.jpg">
-                    <img src="wp-content/uploads/2024/08/gear-close-up.jpg" alt="">
-                </picture>                  
+                </div>             
             </div>
             
         </div>
@@ -344,17 +339,16 @@
         <script>
             window.addEventListener('load', () => {
                 document.querySelector('.after').classList.add('visible');
-                document.querySelector('.gear').classList.add('visible');
+                
             });
         </script>
 
         <script>
             window.addEventListener('scroll', function() {
                 const target = document.getElementById('gear');
-                const scrollPoint = 10; // ponto de rolagem
+                const scrollPoint = 400; // ponto de rolagem
 
                 if (window.scrollY > scrollPoint) {
-                    // torna o item invisível
                     target.classList.add('show');
                 }
             });

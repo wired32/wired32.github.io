@@ -7,8 +7,18 @@
     min-height:590px;
 }
 
-body {
-    overflow-x: none;
+.mobile-item{
+    z-index: 100 !important;    
+}
+
+.mobile-menu {
+    position: relative;
+    z-index: 2 !important;
+}
+
+.engenheira {
+    position: inherit;
+    z-index: 3;
 }
 
 .after {
@@ -45,7 +55,7 @@ body {
 }
 
 #gear {
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .show {
@@ -68,8 +78,15 @@ body {
 
 .products-redirect {
     display: flex;
+    background-image:url("../../2024/08/gear-close-up.jpg");
+    background-attachment: fixed;
+    background-size: cover; /* Ensures the image resizes to fit */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    background-clip: border-box;
     justify-content: flex-start;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .overframe {
@@ -80,6 +97,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    box-sizing: border-box;
 }
 
 .opproduct {
@@ -547,6 +565,7 @@ body {
     }
     .elementor-16 .elementor-element.elementor-element-28727de:not(.elementor-motion-effects-element-type-background), .elementor-16 .elementor-element.elementor-element-28727de > .elementor-motion-effects-container > .elementor-motion-effects-layer{
         background-image:url("../../2024/08/Mask-group-30.png");
+        z-index: 1;
     }
 
     .title-wrapper {
@@ -576,6 +595,7 @@ body {
     }
 
     .products-redirect {
+        background-image:url("../../2024/08/gear-mobile.png");
         justify-content: center;
         align-items: center;
     }

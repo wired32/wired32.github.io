@@ -82,6 +82,7 @@
     background-attachment: fixed;
     background-size: cover; /* Ensures the image resizes to fit */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    filter: grayscale(0.5);
     margin: 0;
     background-clip: border-box;
     justify-content: flex-start;

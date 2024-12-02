@@ -1,0 +1,9 @@
+.facebook-icon {
+    width: 33px;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.facebook-icon2 {
+    width: 24px;
+}

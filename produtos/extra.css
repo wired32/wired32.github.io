@@ -9,3 +9,21 @@ img {
     outline: none;
     border-radius: 0;
 }
+
+.facebook-icon {
+    width: 33px;
+    outline: none;
+    border-radius: 0 !important; 
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.facebook-icon2 {
+    outline: none;
+    border-radius: 0 !important;
+    width: 24px;
+}
+
+.priority-facebook {
+    background-color: transparent !important; 
+}
